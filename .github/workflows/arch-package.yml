@@ -34,6 +34,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./wd719x-firmware-${GITHUB_REF:10}.pkg.tar.xz
-        asset_name: wd719x-firmware-${GITHUB_REF:10}.pkg.tar.xz
+        asset_path: ./wd719x-firmware-${{github.ref:10}}.pkg.tar.xz
+        asset_name: wd719x-firmware-${{github.ref:10}}.pkg.tar.xz
         asset_content_type: application/x-xz

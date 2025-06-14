@@ -25,5 +25,5 @@ build() {
 }
 
 package() {
-  install -Dt "${pkgdir}/usr/lib/firmware" -m644 wd719x-risc.bin wd719x-wcs.bin
+  install -Dt -m644 "${pkgdir}/usr/lib/firmware" wd719x-risc.bin wd719x-wcs.bin
 }
